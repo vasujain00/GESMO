@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>GESMO</title>
+		<meta name=viewport content='width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,minimal-ui' >
+
+		<!-- threeJs files -->
+		<script type="text/javascript" src="js/three.min.js"></script>
+		<script type="text/javascript" src="js/OBJLoader.js"></script>
+		<script type="text/javascript" src="js/MTLLoader.js"></script>
+		<script type="text/javascript" src="js/TrackballControls.js"></script>
+		<script type="text/javascript" src="js/tween.min.js"></script>
+		<script type="text/javascript" src="js/CSS3DRenderer.js"></script>
+		<!--<script type="text/javascript" src="js/SceneUtils.js"></script> -->
+
+		<!-- for AJAX requests -->
+		<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+
+		<!-- leap files -->
+		<script type="text/javascript" src="js/leap-0.6.4.js"></script>
+		<script type="text/javascript" src="js/leap-plugins-0.1.12.min.js"></script>
+  		<script type="text/javascript" src="js/leap.rigged-hand-0.1.7.min.js"></script>
+
+  		<!-- howler files -->
+  		<script type="text/javascript" src="js/player/howler.core.js"></script>
+  		<script type="text/javascript" src="js/player/siriwave.js"></script>
+  		<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Droid+Serif" />
+		<style type="text/css">
+			body { font-size: 12pt; font-family: "Droid Serif"; margin: 0; overflow: hidden; background-color: black;}
+			
+			#userMap{
+				  position: absolute;
+				  width: 225px;
+				  height: 225px;
+				  padding: 0;
+				  margin: 50px 50px;
+				  overflow: hidden;
+				  background: transparent;
+				  font-family: "Helvetica Neue", "Futura", "Trebuchet MS", Arial;
+				  -webkit-user-select: none;
+				  user-select: none;
+				  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+				  z-index: 999;
+				 font-size: 11px;
+				 color: white;
+				 display: none;
+			}
+
+			#userMap table {
+				width: 100%;
+				height: 100%;
+			}
+
+			#userMap td {
+				text-align: center;
+			}
+
+			#userMap .box{
+				padding: 0;
+				border: 2px solid rgba(33, 148, 206, 0.25);
+				border-radius:4px 4px;
+			}
+
+			#userMap .arrows{
+				background: url("http://localhost/GESMO/images/nav.png");
+    			background-size: contain;
+    			background-position: center;
+			}
+
+			#tuts{
+				  position: absolute;
+				  width: 225px;
+				  height: 225px;
+				  padding: 0;
+				  right: 0;
+				  margin: 50px 50px;
+				  overflow: hidden;
+				  background: transparent;
+				  font-family: "Helvetica Neue", "Futura", "Trebuchet MS", Arial;
+				  -webkit-user-select: none;
+				  user-select: none;
+				  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+				  z-index: 999;
+				 font-size: 11px;
+				 color: white;
+			}
+
+			#tuts table {
+				width: 100%;
+				height: 100%;
+			}
+
+			#tuts td {
+				text-align: center;
+			}
+
+			#tuts .box{
+				padding: 0px;
+				border: 2px solid rgba(33, 148, 206, 0.25);
+				border-radius:4px 4px;
+				background: transparent;
+				cursor: pointer;
+			}
+
+			#tuts .box:hover {
+				border-color: rgba(33, 148, 206, 1);
+				background: rgba(33, 148, 206, 0.25);
+			}
+		</style>
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+	</head>
+	<body>
+		 <div id="userMap">
+		 	<table>
+		 		<tr>
+		 			<td></td>
+		 			<td class="box" colspan="3">New Releases</td>
+		 			<td></td>
+		 		</tr>
+		 		<tr>
+		 			<td class="box" rowspan="3">Artists</td>
+		 			<td class="arrows" rowspan="3" colspan="3">MAP</td>
+		 			<td class="box" rowspan="3">Charts</td>
+		 		</tr>
+		 		<tr></tr>
+		 		<tr></tr>
+		 		<tr>
+		 			<td></td>
+		 			<td class="box" colspan="3">Queue</td>
+		 			<td></td>
+		 		</tr>
+		 	</table>
+		 </div>
+		 <div id="tuts">
+		 	<table>
+		 		<tr>
+		 			<td></td>
+		 			<td id="introduction" class="box" colspan="4">Introduction</td>
+		 			<td></td>
+		 		</tr>
+		 		<tr>
+		 			<td id="applicationStart" class="box" rowspan="2">Application Start</td>
+		 			<td rowspan="4" colspan="4">TUTORIALS</td>
+		 			<td id="itemSelection" class="box" rowspan="2">Item Selection</td>
+		 		</tr>
+		 		<tr>
+		 		</tr>
+		 		<tr>
+		 			<td id="navigation" class="box" rowspan="2">Navigation</td>
+		 			<td id="volumeControl" class="box" rowspan="2">Volume Control</td>
+		 		</tr>
+		 		<tr>
+		 		</tr>
+		 		<tr>
+		 			<td></td>
+		 			<td id="pauseAndPlay" class="box" colspan="2">Pause and Play</td>
+		 			<td id="nextAndPrevious" class="box" colspan="2">Previous and Next</td>
+		 			<td></td>
+		 		</tr>
+		 	</table>
+		 </div>
+		<!--<div id="container"></div>-->
+		<div id="playerContainer">
+			<div id="title">
+			    <span id="track"></span>
+			    <div id="timer">0:00</div>
+			    <div id="duration">0:00</div>
+		  	</div>
+		  <!-- Progress -->
+		  <div id="progress"></div>
+		</div>
+		<div class="controlsOuter">
+		    <div class="btn" id="volumeBtn"></div>
+		    <div class="controlsInner">
+		      <div id="loading"></div>
+		      <div id="waveform"></div>
+		      		  <!-- Volume -->
+			  <div id="volume" class="fadeout">
+			    <div id="barFull" class="bar"></div>
+			    <div id="barEmpty" class="bar"></div>
+			    <div id="sliderBtn"></div>
+			  </div>
+		      <div class="btn" id="playBtn"></div>
+		      <div class="btn" id="pauseBtn"></div>
+		      <div class="btn" id="nextBtn"></div>
+		      <div class="btn" id="prevBtn"></div>
+		      <div class="btn" id="stopBtn"></div>
+			</div>
+		 </div>
+		<script type="text/javascript" src="js/gesmo.js"></script>
+		<script type="text/javascript" src="js/GesmoLogger.js"></script>
+		<script type="text/javascript" src="js/DataController.js"></script>
+		<script type="text/javascript" src="js/GesmoUI.js"></script>
+		<script type="text/javascript" src="js/uiassets.js"></script>
+		<script type="text/javascript" src="js/GesmoPlayer.js"></script>
+		<script type="text/javascript" src="js/GestureController.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>

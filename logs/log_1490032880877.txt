@@ -1,0 +1,6 @@
+Log Start
+Array
+(
+    [0] => 20/03/2017:13:01:20,logger, created, logfile:  log_1490032880877.txt
+
+)

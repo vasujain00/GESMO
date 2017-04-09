@@ -1,0 +1,50 @@
+Log Start
+Array
+(
+    [0] => 20/03/2017:12:38:27,logger, created, logfile:  log_1490031506819.txt
+
+    [1] => 20/03/2017:12:38:27,ui, loaded, http://localhost/GESMO/models/music_note.obj
+
+    [2] => 20/03/2017:12:38:27,ui, loaded, http://localhost/GESMO/models/record.obj
+
+    [3] => 20/03/2017:12:38:27,ui, loaded, http://localhost/GESMO/models/10.obj
+
+    [4] => 20/03/2017:12:38:27,ui, loaded, http://localhost/GESMO/models/guitar.obj
+
+    [5] => 20/03/2017:12:38:27,ui, loaded, http://localhost/GESMO/fonts/droid/droid_serif_regular.typeface.json
+
+    [6] => 20/03/2017:12:38:27,ui, complete, setup
+
+    [7] => 20/03/2017:12:38:30,ui, complete, start
+
+    [8] => 20/03/2017:12:38:36,ui, complete, home
+
+    [9] => 20/03/2017:12:38:36,datacontroller, sending request to, (http://localhost/Gesmo/newReleases.php?mostRecent=30) 
+
+    [10] => 20/03/2017:12:38:36,gesture, grab, made to start application
+
+    [11] => 20/03/2017:12:38:36,datacontroller, request success, status
+
+    [12] => 20/03/2017:12:38:38,ui, loaded, albums list
+
+    [13] => 20/03/2017:12:38:38,gesture, grab, made to play
+
+    [14] => 20/03/2017:12:38:43,datacontroller, sending request to, (http://localhost/Gesmo/Songalbum.php?album_id=14) 
+
+    [15] => 20/03/2017:12:38:43,ui, clicked, albums: Kygo
+
+    [16] => 20/03/2017:12:38:43,gesture, pinch, made
+
+    [17] => 20/03/2017:12:38:43,datacontroller, request success, status
+
+    [18] => 20/03/2017:12:38:43,ui, loaded, songs list
+
+    [19] => 20/03/2017:12:38:43,gesture, pinch, made
+
+    [20] => 20/03/2017:12:38:46,ui, clicked, songs: kylo
+
+    [21] => 20/03/2017:12:38:46,gesture, pinch, made
+
+    [22] => 20/03/2017:12:38:46,gesture, pinch, made
+
+)

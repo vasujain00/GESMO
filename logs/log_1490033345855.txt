@@ -1,0 +1,52 @@
+Log Start
+Array
+(
+    [0] => 20/03/2017:13:09:06,logger, created, logfile:  log_1490033345855.txt
+
+    [1] => 20/03/2017:13:09:06,ui, loaded, http://localhost/GESMO/models/music_note.obj
+
+    [2] => 20/03/2017:13:09:06,ui, loaded, http://localhost/GESMO/models/record.obj
+
+    [3] => 20/03/2017:13:09:06,ui, loaded, http://localhost/GESMO/models/guitar.obj
+
+    [4] => 20/03/2017:13:09:06,ui, loaded, http://localhost/GESMO/models/10.obj
+
+    [5] => 20/03/2017:13:09:06,ui, loaded, http://localhost/GESMO/fonts/droid/droid_serif_regular.typeface.json
+
+    [6] => 20/03/2017:13:09:06,ui, complete, setup
+
+    [7] => 20/03/2017:13:09:10,ui, complete, start
+
+    [8] => 20/03/2017:13:09:10,ui, complete, home
+
+    [9] => 20/03/2017:13:09:10,datacontroller, sending request to, (http://localhost/Gesmo/newReleases.php?mostRecent=30) 
+
+    [10] => 20/03/2017:13:09:10,gesture, grab, made to start application
+
+    [11] => 20/03/2017:13:09:10,datacontroller, request success, status
+
+    [12] => 20/03/2017:13:09:12,ui, loaded, albums list
+
+    [13] => 20/03/2017:13:09:12,gesture, grab, made to play
+
+    [14] => 20/03/2017:13:09:17,datacontroller, sending request to, (http://localhost/Gesmo/Songalbum.php?album_id=11) 
+
+    [15] => 20/03/2017:13:09:17,ui, clicked, albums: Glory
+
+    [16] => 20/03/2017:13:09:17,gesture, pinch, made
+
+    [17] => 20/03/2017:13:09:17,datacontroller, request success, status
+
+    [18] => 20/03/2017:13:09:17,ui, loaded, songs list
+
+    [19] => 20/03/2017:13:09:17,gesture, pinch, made
+
+    [20] => 20/03/2017:13:09:22,ui, clicked, songs: Toxic
+
+    [21] => 20/03/2017:13:09:22,gesture, pinch, made
+
+    [22] => 20/03/2017:13:09:22,gesture, pinch, made
+
+    [23] => 20/03/2017:13:09:25,ui, songchange, from0 to 0
+
+)

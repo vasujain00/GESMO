@@ -1,0 +1,74 @@
+Log Start
+Array
+(
+    [0] => 20/03/2017:13:01:53,logger, created, logfile:  log_1490032913161.txt
+
+    [1] => 20/03/2017:13:01:53,ui, loaded, http://localhost/GESMO/models/music_note.obj
+
+    [2] => 20/03/2017:13:01:53,ui, loaded, http://localhost/GESMO/models/record.obj
+
+    [3] => 20/03/2017:13:01:53,ui, loaded, http://localhost/GESMO/models/10.obj
+
+    [4] => 20/03/2017:13:01:53,ui, loaded, http://localhost/GESMO/models/guitar.obj
+
+    [5] => 20/03/2017:13:01:53,ui, loaded, http://localhost/GESMO/fonts/droid/droid_serif_regular.typeface.json
+
+    [6] => 20/03/2017:13:01:53,ui, complete, setup
+
+    [7] => 20/03/2017:13:01:57,ui, complete, start
+
+    [8] => 20/03/2017:13:02:01,ui, complete, home
+
+    [9] => 20/03/2017:13:02:01,datacontroller, sending request to, (http://localhost/Gesmo/newReleases.php?mostRecent=30) 
+
+    [10] => 20/03/2017:13:02:01,gesture, grab, made to start application
+
+    [11] => 20/03/2017:13:02:01,datacontroller, request success, status
+
+    [12] => 20/03/2017:13:02:02,ui, loaded, albums list
+
+    [13] => 20/03/2017:13:02:03,gesture, grab, made to play
+
+    [14] => 20/03/2017:13:02:07,gesture, grab and pull, made to moveInSection: right
+
+    [15] => 20/03/2017:13:02:07,gesture, grab and pull, made to moveInSection: right
+
+    [16] => 20/03/2017:13:02:07,gesture, grab and pull, made to moveInSection: right
+
+    [17] => 20/03/2017:13:02:07,gesture, grab and pull, made to moveInSection: right
+
+    [18] => 20/03/2017:13:02:07,gesture, grab and pull, made to moveInSection: right
+
+    [19] => 20/03/2017:13:02:07,gesture, grab and pull, made to moveInSection: right
+
+    [20] => 20/03/2017:13:02:07,gesture, grab and pull, made to moveInSection: right
+
+    [21] => 20/03/2017:13:02:07,gesture, grab and pull, made to moveInSection: right
+
+    [22] => 20/03/2017:13:02:08,datacontroller, sending request to, (http://localhost/Gesmo/Genre.php) 
+
+    [23] => 20/03/2017:13:02:08,ui, movedToSection, 0
+
+    [24] => 20/03/2017:13:02:08,datacontroller, request success, status
+
+    [25] => 20/03/2017:13:02:08,ui, loaded, genres list
+
+    [26] => 20/03/2017:13:02:12,gesture, grab and pull, made to moveInSection: left
+
+    [27] => 20/03/2017:13:02:12,gesture, grab and pull, made to moveInSection: left
+
+    [28] => 20/03/2017:13:02:12,gesture, grab and pull, made to moveInSection: left
+
+    [29] => 20/03/2017:13:02:12,gesture, grab and pull, made to moveInSection: left
+
+    [30] => 20/03/2017:13:02:12,gesture, grab and pull, made to moveInSection: left
+
+    [31] => 20/03/2017:13:02:12,gesture, grab and pull, made to moveInSection: left
+
+    [32] => 20/03/2017:13:02:12,gesture, grab and pull, made to moveInSection: left
+
+    [33] => 20/03/2017:13:02:13,gesture, grab and pull, made to moveInSection: left
+
+    [34] => 20/03/2017:13:02:13,gesture, grab and pull, made to moveInSection: left
+
+)

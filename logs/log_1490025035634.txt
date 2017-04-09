@@ -1,0 +1,60 @@
+Log Start
+Array
+(
+    [0] => 20/03/2017:10:50:36,logger, created, logfile:  log_1490025035634.txt
+
+    [1] => 20/03/2017:10:50:36,ui, loaded, http://localhost/GESMO/models/music_note.obj
+
+    [2] => 20/03/2017:10:50:36,ui, loaded, http://localhost/GESMO/models/record.obj
+
+    [3] => 20/03/2017:10:50:36,ui, loaded, http://localhost/GESMO/models/10.obj
+
+    [4] => 20/03/2017:10:50:36,ui, loaded, http://localhost/GESMO/models/guitar.obj
+
+    [5] => 20/03/2017:10:50:36,ui, loaded, http://localhost/GESMO/fonts/droid/droid_serif_regular.typeface.json
+
+    [6] => 20/03/2017:10:50:36,ui, complete, setup
+
+    [7] => 20/03/2017:10:50:39,ui, complete, start
+
+    [8] => 20/03/2017:10:50:41,ui, complete, home
+
+    [9] => 20/03/2017:10:50:41,datacontroller, sending request to, (http://localhost/Gesmo/newReleases.php?mostRecent=30) 
+
+    [10] => 20/03/2017:10:50:41,gesture, grab, made to start application
+
+    [11] => 20/03/2017:10:50:41,datacontroller, request success, status
+
+    [12] => 20/03/2017:10:50:43,ui, loaded, albums list
+
+    [13] => 20/03/2017:10:50:48,datacontroller, sending request to, (http://localhost/Gesmo/Songalbum.php?album_id=14) 
+
+    [14] => 20/03/2017:10:50:48,ui, clicked, albums: Kygo
+
+    [15] => 20/03/2017:10:50:48,gesture, pinch, made
+
+    [16] => 20/03/2017:10:50:48,datacontroller, request success, status
+
+    [17] => 20/03/2017:10:50:48,ui, loaded, songs list
+
+    [18] => 20/03/2017:10:50:48,gesture, pinch, made
+
+    [19] => 20/03/2017:10:50:51,ui, clicked, songs: kylo
+
+    [20] => 20/03/2017:10:50:51,gesture, pinch, made
+
+    [21] => 20/03/2017:10:50:52,gesture, pinch, made
+
+    [22] => 20/03/2017:10:50:54,ui, songchange, from0to 0
+
+    [23] => 20/03/2017:10:50:55,datacontroller, sending request to, (http://localhost/Gesmo/newReleases.php?mostRecent=30) 
+
+    [24] => 20/03/2017:10:50:55,ui, clicked, back: New Releases
+
+    [25] => 20/03/2017:10:50:55,gesture, pinch, made
+
+    [26] => 20/03/2017:10:50:56,datacontroller, request success, status
+
+    [27] => 20/03/2017:10:50:57,ui, loaded, albums list
+
+)

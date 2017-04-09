@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Play Sound</title>
+    <script src="/Users/bahar/Desktop/howler.js"></script>
+</head>
+<body>
+  
+  <button onclick="minimizeFunction()">Tutorial</button>
+  <p id="demo"></p>
+  <script>
+      function minimizeFunction(){
+            document.getElementById("demo").innerHTML =window.location.href = "tutorial.html";
+      }
+      var pong = new Howl({src: ['pong.mp3']});
+      document.getElementById('btn').onclick=function(){pong.play();}
+  </script>
+</body>
+</html>

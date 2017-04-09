@@ -1,0 +1,48 @@
+Log Start
+Array
+(
+    [0] => 20/03/2017:13:04:44,logger, created, logfile:  log_1490033083760.txt
+
+    [1] => 20/03/2017:13:04:44,ui, loaded, http://localhost/GESMO/models/music_note.obj
+
+    [2] => 20/03/2017:13:04:44,ui, loaded, http://localhost/GESMO/models/record.obj
+
+    [3] => 20/03/2017:13:04:44,ui, loaded, http://localhost/GESMO/models/10.obj
+
+    [4] => 20/03/2017:13:04:44,ui, loaded, http://localhost/GESMO/models/guitar.obj
+
+    [5] => 20/03/2017:13:04:44,ui, loaded, http://localhost/GESMO/fonts/droid/droid_serif_regular.typeface.json
+
+    [6] => 20/03/2017:13:04:44,ui, complete, setup
+
+    [7] => 20/03/2017:13:04:47,ui, complete, start
+
+    [8] => 20/03/2017:13:04:52,ui, complete, home
+
+    [9] => 20/03/2017:13:04:52,datacontroller, sending request to, (http://localhost/Gesmo/newReleases.php?mostRecent=30) 
+
+    [10] => 20/03/2017:13:04:52,gesture, grab, made to start application
+
+    [11] => 20/03/2017:13:04:53,datacontroller, request success, status
+
+    [12] => 20/03/2017:13:04:54,ui, loaded, albums list
+
+    [13] => 20/03/2017:13:04:54,gesture, grab, made to play
+
+    [14] => 20/03/2017:13:04:59,gesture, grab and pull, made to moveInSection: 3: forward
+
+    [15] => 20/03/2017:13:05:00,ui, movedInSection, 3 by 1000 z
+
+    [16] => 20/03/2017:13:05:02,datacontroller, sending request to, (http://localhost/Gesmo/Songalbum.php?album_id=22) 
+
+    [17] => 20/03/2017:13:05:02,ui, clicked, albums: Prism
+
+    [18] => 20/03/2017:13:05:02,gesture, pinch, made
+
+    [19] => 20/03/2017:13:05:02,datacontroller, request success, status
+
+    [20] => 20/03/2017:13:05:02,ui, loaded, songs list
+
+    [21] => 20/03/2017:13:05:02,gesture, pinch, made
+
+)

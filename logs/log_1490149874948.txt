@@ -1,0 +1,12 @@
+Log Start
+Array
+(
+    [0] => 21/03/2017:19:31:16,logger, created, logfile:  log_1490149874948.txt
+
+    [1] => 21/03/2017:19:31:16,ui, loaded, http://localhost/GESMO/fonts/droid/droid_serif_regular.typeface.json
+
+    [2] => 21/03/2017:19:31:16,ui, complete, setup
+
+    [3] => 21/03/2017:19:31:20,ui, complete, start
+
+)

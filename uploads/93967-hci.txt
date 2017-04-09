@@ -1,0 +1,6 @@
+GRO-SIRI is an android application which will be working on android phone without the internet permission.This application
+ will be using Tesseract OCR library for scanning of reciepts and we will be adding a Speech to text API so that people can speak and bulid there list.
+User will going to give the input list of items he/she has purchased. our application will going to store the list in the datebase with the reminder on for expiration which we have predefined in our database.
+We will be using sqlite database to store all the information.Push notifications will be genrated when the expiration date will be coming near. 
+User will also going to have the option to either delete the item if they have consumed it or just wait for the expiration to pass then it will automatically be deleted from the list. 
+We will be designing the layouts using android xml files and will use java to facilitate the connection
